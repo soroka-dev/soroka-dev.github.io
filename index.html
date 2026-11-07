@@ -3,57 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111e31">
+  <meta name="theme-color" content="#f6f5f1">
   <meta name="description" content="SorokaDev — разработка сайтов и приложений с нуля под ключ: от идеи до запуска.">
   <meta property="og:title" content="SorokaDev — сайты и приложения под ключ">
-  <meta property="og:description" content="У каждой идеи должен быть свой цифровой формат.">
+  <meta property="og:description" content="Превращаем идеи в удобные сайты и приложения.">
   <title>SorokaDev — сайты и приложения под ключ</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <header class="site-header" id="top">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="SorokaDev — наверх"><img src="assets/sorokadev-logo.png" alt="SorokaDev" width="180" height="60"></a>
-      <nav class="desktop-nav" aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#approach">Подход</a><a href="#process">Этапы</a></nav>
-      <a class="header-link" href="#contact">Обсудить проект <span aria-hidden="true">↗</span></a>
+      <nav class="desktop-nav" aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#approach">Подход</a><a href="#process">Как работаем</a></nav>
+      <a class="header-link" href="#contact">Оставить заявку</a>
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
     </div>
-    <nav class="mobile-nav" id="mobile-menu" aria-label="Мобильная навигация" hidden><a href="#services">Услуги</a><a href="#approach">Подход</a><a href="#process">Этапы</a><a href="#contact">Обсудить проект</a></nav>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Мобильная навигация" hidden><a href="#services">Услуги</a><a href="#approach">Подход</a><a href="#process">Как работаем</a><a href="#contact">Оставить заявку</a></nav>
   </header>
+
   <main>
-    <section class="hero">
-      <div class="wrap">
-        <div class="hero-topline"><span>Независимая студия разработки</span><span>Сайты / Приложения / Сервисы</span></div>
-        <div class="hero-heading"><div><p class="eyebrow">SorokaDev · digital studio</p><h1>У каждой идеи<br>должен быть <em>свой</em><br>цифровой формат.</h1></div><div class="hero-aside"><span class="aside-index">01 / 04</span><p>Создаём сайты и приложения с нуля: разбираемся в задаче, проектируем понятный опыт и доводим продукт до запуска.</p><a class="arrow-link" href="#services">Что мы делаем <span aria-hidden="true">↗</span></a></div></div>
-        <figure class="hero-photo"><img src="assets/studio-worktable.jpg" alt="Рабочее место с ноутбуком, эскизами сайта и мобильным интерфейсом" width="1536" height="1024" fetchpriority="high"><figcaption><span>От первых набросков</span><span>до работающего продукта</span></figcaption></figure>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Превращаем идеи в <span>сайты и приложения.</span></h1>
+          <p>Разрабатываем цифровые продукты с нуля под ключ: от первого разговора до запуска.</p>
+          <a class="primary-link" href="#services">Посмотреть услуги</a>
+        </div>
+        <div class="hero-media"><img src="assets/studio-worktable.jpg" alt="Рабочее место с ноутбуком, эскизами сайта и мобильным интерфейсом" width="1200" height="800" fetchpriority="high"></div>
       </div>
     </section>
-    <section class="services section" id="services" aria-labelledby="services-title"><div class="wrap">
-      <div class="section-head"><p class="section-label">01 — Направления</p><h2 id="services-title">Делаем то, что нужно<br><em>вашему проекту.</em></h2><p>У каждого продукта свой масштаб и свои задачи. Начинаем с них, а затем подбираем форму и технологию.</p></div>
-      <div class="service-list">
-        <article class="service-item"><span class="item-number">01</span><div><h3>Сайты</h3><p>Лендинги, сайты-визитки, многостраничные сайты, интернет-магазины и проекты на CMS.</p></div><span class="item-note">Для запуска и роста бизнеса</span><span class="item-arrow" aria-hidden="true">↗</span></article>
-        <article class="service-item"><span class="item-number">02</span><div><h3>Веб-приложения</h3><p>Сервисы, личные кабинеты и внутренние инструменты с интерфейсом под реальные рабочие сценарии.</p></div><span class="item-note">Для сложных задач и процессов</span><span class="item-arrow" aria-hidden="true">↗</span></article>
-        <article class="service-item"><span class="item-number">03</span><div><h3>Приложения</h3><p>От структуры и экранов до функционального продукта, которым удобно пользоваться каждый день.</p></div><span class="item-note">Для людей и их привычек</span><span class="item-arrow" aria-hidden="true">↗</span></article>
+
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-intro"><h2 id="services-title">Что можем сделать</h2><p>Подбираем решение под вашу задачу, а не под готовый шаблон.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><h3>Сайты</h3><p>Сайт-визитка, лендинг, интернет-магазин или большой многостраничный проект.</p></article>
+          <article class="service-card"><h3>Веб-приложения</h3><p>Личные кабинеты, сервисы и инструменты, которые помогают людям работать проще.</p></article>
+          <article class="service-card"><h3>Приложения</h3><p>Продуманные экраны и функции для продукта, которым удобно пользоваться каждый день.</p></article>
+        </div>
       </div>
-    </div></section>
-    <section class="approach section" id="approach" aria-labelledby="approach-title"><div class="wrap approach-grid">
-      <figure class="approach-photo"><img src="assets/design-process.jpg" alt="Проектирование мобильного приложения на бумажных эскизах" width="1456" height="1092" loading="lazy"><figcaption>Внимание к деталям начинается до первой строки кода.</figcaption></figure>
-      <div class="approach-copy"><p class="section-label">02 — Подход</p><h2 id="approach-title">Сначала<br><em>смысл.</em><br>Потом пиксели<br>и код.</h2><p class="approach-intro">Хороший продукт начинается с вопросов: для кого он, какую задачу решает и как человек будет им пользоваться.</p><div class="approach-points"><p><span>А</span> Индивидуальная структура и визуальный язык</p><p><span>Б</span> Удобство на телефоне, планшете и компьютере</p><p><span>В</span> Основа для развития после запуска</p></div></div>
-    </div></section>
-    <section class="process section" id="process" aria-labelledby="process-title"><div class="wrap">
-      <div class="section-head process-head"><p class="section-label">03 — Работа над проектом</p><h2 id="process-title">Один путь.<br><em>Четыре понятных шага.</em></h2></div>
-      <div class="steps"><article class="step"><span>01</span><h3>Разговор</h3><p>Знакомимся с идеей, аудиторией и задачами.</p></article><article class="step"><span>02</span><h3>Проектирование</h3><p>Собираем структуру и продумываем интерфейс.</p></article><article class="step"><span>03</span><h3>Разработка</h3><p>Создаём продукт и проверяем ключевые сценарии.</p></article><article class="step"><span>04</span><h3>Запуск</h3><p>Публикуем и намечаем дальнейшее развитие.</p></article></div>
-    </div></section>
+    </section>
+
+    <section class="approach section" id="approach" aria-labelledby="approach-title">
+      <div class="wrap approach-grid">
+        <div class="approach-media"><img src="assets/design-process.jpg" alt="Проектирование мобильного приложения на бумажных эскизах" width="1200" height="900" loading="lazy"></div>
+        <div class="approach-copy"><h2 id="approach-title">Сначала разберёмся в задаче. Потом начнём делать.</h2><p>Мы слушаем, задаём вопросы и продумываем путь пользователя. Так у проекта появляется своя структура, удобный интерфейс и основа для развития.</p><ul><li>Дизайн под вашу идею</li><li>Удобство на любом устройстве</li><li>Поддержка на пути к запуску</li></ul></div>
+      </div>
+    </section>
+
+    <section class="process section" id="process" aria-labelledby="process-title">
+      <div class="wrap"><div class="section-intro"><h2 id="process-title">Как работаем</h2><p>Вы всегда понимаете, что происходит с проектом.</p></div>
+        <div class="steps"><article class="step"><h3>Знакомимся</h3><p>Обсуждаем вашу идею, аудиторию и цели.</p></article><article class="step"><h3>Проектируем</h3><p>Собираем структуру и продумываем интерфейс.</p></article><article class="step"><h3>Разрабатываем</h3><p>Создаём продукт и проверяем важные сценарии.</p></article><article class="step"><h3>Запускаем</h3><p>Публикуем проект и помогаем с дальнейшими шагами.</p></article></div>
+      </div>
+    </section>
+
     <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid">
-      <div class="contact-copy"><p class="section-label">04 — Начнём с вашей идеи</p><h2 id="contact-title">Расскажите,<br>что хотите<br><em>создать.</em></h2><p>Несколько строк о задаче помогут начать разговор по существу. Форма откроется, когда мы подключим приём заявок.</p><div class="contact-mark" aria-hidden="true">S<span>/</span>D</div></div>
-      <form class="lead-form" id="lead-form" aria-label="Заявка на проект"><fieldset disabled><legend>Коротко о проекте</legend><div class="form-row"><label>Ваше имя<input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться" required></label><label>Контакт для связи<input type="text" name="contact" placeholder="Telegram или email" required></label></div><label>Что хотите создать<select name="project_type" required><option value="" selected>Выберите направление</option><option value="website">Сайт</option><option value="web-app">Веб-приложение</option><option value="app">Приложение</option><option value="other">Другое</option></select></label><label>О вашей задаче<textarea name="details" rows="4" placeholder="Опишите идею в нескольких предложениях" required></textarea></label><button class="submit-button" type="submit">Отправить заявку <span aria-hidden="true">↗</span></button></fieldset><p class="form-state" role="status">Приём заявок откроется после подключения Telegram-бота.</p></form>
+      <div class="contact-copy"><h2 id="contact-title">Расскажите о своей идее</h2><p>Оставьте короткое описание проекта. Форма начнёт принимать заявки после подключения Telegram-бота.</p></div>
+      <form class="lead-form" id="lead-form" aria-label="Заявка на проект"><fieldset disabled><legend>Заявка на проект</legend><div class="form-row"><label>Ваше имя<input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться" required></label><label>Контакт для связи<input type="text" name="contact" placeholder="Telegram или email" required></label></div><label>Что хотите создать<select name="project_type" required><option value="" selected>Выберите направление</option><option value="website">Сайт</option><option value="web-app">Веб-приложение</option><option value="app">Приложение</option><option value="other">Другое</option></select></label><label>О вашей задаче<textarea name="details" rows="4" placeholder="Опишите идею в нескольких предложениях" required></textarea></label><button class="submit-button" type="submit">Отправить заявку</button></fieldset><p class="form-state" role="status">Приём заявок откроется после подключения Telegram-бота.</p></form>
     </div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#top" aria-label="SorokaDev — наверх"><img src="assets/sorokadev-logo.png" alt="SorokaDev" width="180" height="60" loading="lazy"></a><p>Сайты и приложения с нуля под ключ</p><a href="#top">Наверх ↑</a><span>© <span id="year">2026</span> SorokaDev</span></div></footer>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#top" aria-label="SorokaDev — наверх"><img src="assets/sorokadev-logo.png" alt="SorokaDev" width="180" height="60" loading="lazy"></a><p>Сайты и приложения с нуля под ключ</p><span>© <span id="year">2026</span> SorokaDev</span></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
