@@ -25,7 +25,7 @@ p, h1, h2, h3 { margin: 0; }
 
 .site-header { background: var(--paper); }
 .header-inner { min-height: 102px; display: flex; align-items: center; gap: 42px; }
-.brand { width: 194px; height: 70px; display: flex; align-items: center; justify-content: center; flex: none; background: #17263d; border-radius: 19px; }
+.brand { width: 174px; height: 58px; display: block; flex: none; }
 .brand img { width: 174px; height: 58px; object-fit: contain; }
 .desktop-nav { display: flex; gap: 36px; margin-left: auto; }
 .desktop-nav a { font-size: 14px; font-weight: 600; color: #c1cbd9; transition: color .2s; }
@@ -48,8 +48,9 @@ h1 span { color: var(--blue); }
 h2 { font-size: clamp(38px, 4.3vw, 60px); line-height: 1.14; font-weight: 700; }
 .section-intro p { max-width: 360px; font-size: 16px; line-height: 1.65; color: var(--muted); }
 .services { background: #152238; border-radius: 40px 40px 0 0; }
-.service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-.service-card { background: var(--white); border-radius: 28px; padding: 36px; min-height: 254px; }
+.service-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; }
+.service-card { grid-column: span 2; background: var(--white); border-radius: 28px; padding: 36px; min-height: 254px; }
+.service-card:nth-last-child(-n + 2) { grid-column: span 3; }
 .service-card h3 { font-size: 27px; font-weight: 700; margin-bottom: 20px; }
 .service-card p { font-size: 15px; line-height: 1.75; color: var(--muted); }
 
@@ -88,7 +89,6 @@ h2 { font-size: clamp(38px, 4.3vw, 60px); line-height: 1.14; font-weight: 700; }
 .form-state { font-size: 12px; line-height: 1.6; color: var(--muted); margin-top: 16px; }
 .site-footer { background: var(--navy); color: #afbdd0; }
 .footer-inner { min-height: 130px; display: flex; align-items: center; gap: 32px; font-size: 12px; }
-.footer-inner .brand { background: #17263d; }
 .footer-inner p { margin-right: auto; }
 a:focus-visible, button:focus-visible { outline: 3px solid #7eafea; outline-offset: 4px; }
 
@@ -103,7 +103,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #7eafea; outline-offs
   .wrap { width: min(100% - 36px, 580px); }
   .section { padding: 76px 0; }
   .header-inner { min-height: 80px; }
-  .brand { width: 159px; height: 57px; border-radius: 15px; }
+  .brand { width: 146px; height: 50px; }
   .brand img { width: 146px; height: 50px; }
   .desktop-nav, .header-link { display: none; }
   .menu-toggle { display: flex; margin-left: auto; width: 46px; height: 46px; flex-direction: column; justify-content: center; align-items: center; gap: 6px; background: var(--white); border: 0; border-radius: 14px; }
@@ -122,7 +122,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #7eafea; outline-offs
   .section-intro p { margin-top: 13px; font-size: 15px; }
   .services, .contact { border-radius: 28px 28px 0 0; }
   .service-grid { grid-template-columns: 1fr; gap: 12px; }
-  .service-card { min-height: 0; border-radius: 22px; padding: 26px; }
+  .service-card, .service-card:nth-last-child(-n + 2) { grid-column: 1 / -1; min-height: 0; border-radius: 22px; padding: 26px; }
   .service-card h3 { font-size: 24px; margin-bottom: 10px; }
   .service-card p { font-size: 14px; }
   .approach-grid { display: flex; flex-direction: column; gap: 35px; }
