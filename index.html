@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -64,12 +64,12 @@
     </section>
 
     <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid">
-      <div class="contact-copy"><h2 id="contact-title">Расскажите о своей идее</h2><p>Оставьте короткое описание проекта. Форма начнёт принимать заявки после подключения Telegram-бота.</p></div>
-      <form class="lead-form" id="lead-form" aria-label="Заявка на проект"><fieldset disabled><legend>Заявка на проект</legend><div class="form-row"><label>Ваше имя<input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться" required></label><label>Контакт для связи<input type="text" name="contact" placeholder="Telegram или email" required></label></div><label>Что хотите создать<select name="project_type" required><option value="" selected>Выберите направление</option><option value="website">Сайт</option><option value="web-app">Веб-приложение</option><option value="app">Приложение</option><option value="telegram-bot">Telegram-бот</option><option value="telegram-mini-app">Мини-приложение в Telegram</option><option value="other">Другое</option></select></label><label>О вашей задаче<textarea name="details" rows="4" placeholder="Опишите идею в нескольких предложениях" required></textarea></label><button class="submit-button" type="submit">Отправить заявку</button></fieldset><p class="form-state" role="status">Приём заявок откроется после подключения Telegram-бота.</p></form>
+      <div class="contact-copy"><h2 id="contact-title">Расскажите о своей идее</h2><p>Оставьте короткое описание проекта. Форма начнёт принимать заявки после завершения настройки Telegram-бота.</p></div>
+      <form class="lead-form" id="lead-form" aria-label="Заявка на проект"><fieldset disabled><legend>Заявка на проект</legend><div class="form-row"><label>Ваше имя<input type="text" name="name" autocomplete="name" maxlength="80" placeholder="Как к вам обращаться" required></label><label>Контакт для связи<input type="text" name="contact" maxlength="200" placeholder="Telegram или email" required></label></div><label>Что хотите создать<select name="project_type" required><option value="" selected>Выберите направление</option><option value="website">Сайт</option><option value="web-app">Веб-приложение</option><option value="app">Приложение</option><option value="telegram-bot">Telegram-бот</option><option value="telegram-mini-app">Мини-приложение в Telegram</option><option value="other">Другое</option></select></label><label>О вашей задаче<textarea name="details" rows="4" maxlength="3000" placeholder="Опишите идею в нескольких предложениях" required></textarea></label><div class="form-trap" aria-hidden="true"><label>Ваш сайт<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div><button class="submit-button" type="submit">Отправить заявку</button></fieldset><p class="form-state" role="status" aria-live="polite">Приём заявок откроется после настройки Telegram-бота.</p></form>
     </div></section>
   </main>
 
   <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#top" aria-label="SorokaDev — наверх"><img src="assets/sorokadev-logo.png" alt="SorokaDev" width="180" height="60" loading="lazy"></a><p>Сайты и приложения с нуля под ключ</p><span>© <span id="year">2026</span> SorokaDev</span></div></footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

@@ -87,6 +87,9 @@ h2 { font-size: clamp(38px, 4.3vw, 60px); line-height: 1.14; font-weight: 700; }
 .submit-button { width: 100%; min-height: 52px; border: 0; border-radius: 999px; background: var(--button); color: #fff; font-size: 14px; font-weight: 700; }
 .submit-button:disabled { opacity: .52; cursor: not-allowed; }
 .form-state { font-size: 12px; line-height: 1.6; color: var(--muted); margin-top: 16px; }
+.form-state[data-state="success"] { color: #a7dbbb; }
+.form-state[data-state="error"] { color: #f3b0a9; }
+.form-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .site-footer { background: var(--navy); color: #afbdd0; }
 .footer-inner { min-height: 130px; display: flex; align-items: center; gap: 32px; font-size: 12px; }
 .footer-inner p { margin-right: auto; }
