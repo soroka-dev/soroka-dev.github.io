@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soroka-dev.github.io/onetap-by/sitemap.xml
