@@ -11,3 +11,7 @@
 На странице работает форма заявки с именем, контактом, типом проекта и описанием задачи. Заявки отправляются через [Cloudflare Worker](https://github.com/soroka-dev/sorokadev-leads-bot) в личный Telegram-чат владельца. Токен бота и ID чата хранятся только в закрытых настройках Worker.
 
 Сайт опубликован через GitHub Pages из ветки `main` (корень репозитория).
+
+## Поиск и карточки ссылок
+
+`index.html` содержит canonical, Open Graph и Twitter Card. `sitemap.xml` перечисляет главную страницу; корневой `robots.txt` указывает на карты SorokaDev и OneTap.
